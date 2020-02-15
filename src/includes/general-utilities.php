@@ -372,7 +372,7 @@ function mc_external_link( $link ) {
  *
  * @return string string without newline chars
  */
-function mc_newline_replace( $string, $replace ) {
+function mc_newline_replace( $string, $replace='' ) {
 
 	return (string) str_replace( array( "\r", "\r\n", "\n" ), $replace, $string );
 }
